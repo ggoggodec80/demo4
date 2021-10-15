@@ -7,11 +7,11 @@ import org.springframework.batch.core.step.tasklet.Tasklet;
 import org.springframework.batch.repeat.RepeatStatus;
 
 @Slf4j
-public class TutorialTasklet implements Tasklet {
+public class ItemTasklet implements Tasklet {
 
     @Override
     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
-        System.out.println("TEST");
+        System.out.println("ItemTest");
         return RepeatStatus.FINISHED;
     }
 }
